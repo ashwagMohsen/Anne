@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html leng="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title >Responsive web design</title>
+        <link rel="styleSheet" href="css/font-awesome.min.css" >
+        <link rel="styleSheet" href="css/normalize.css" >
+        <link rel="styleSheet" href="css/main.css" >
+    </head>
+  
+    <body>
+         <!--------- start header ---------->
+         <header class="text-center">
+            <div class="overlay">
+             <div class="container">
+                <h1 >Choose Your Plan</h1>
+                <div class="plan">Free plan contain 10GB</div> 
+                <div class="plan">10$ plan contain 10GB</div> 
+            </div>
+            </div>
+         </header>
+         <!--------- end header ---------->
+         <!--------- start Features ---------->
+         <!--نحنا من البدابة نعطي خواق ثابتة للكونتينر الي هي حجم ثابت بالتالي جميع الكونتينر في الصفحه تاخذ نفس الحجم-->
+          <!-- تم اضافة ديف خاصة ببلوك الفيتشرس وحتى يتم اضافة خصائص لهذا
+             البلوك كامل اما الكونتينر نلاحظ تم اضافتها في كل البلوكات حتى
+              يكون الكونتينر او المحتوى للصفحه كلها ذو خصائص موحده
+               وتم وضع ديف لكل فيت لانه عندنا اكثر من فيت
+            وهذا افضل sectionالخاصه بالبلوك الىdivيمكننا استبدال ال-->
+         <section class="features text-center">
+            <div class="container">
+                <h2>Our Features</h2>
+                <div  class="feat float-left">
+                    <h2>Fast</h2>
+                    <p>This is fat feature</p>
+                </div>
+                <div  class="feat float-left">
+                    <h2>Secure</h2>
+                    <p>This is fat feature</p>
+            </div>
+            <div  class="feat float-left">
+                <h2>Sheep</h2>
+                <p>This is fat feature</p>
+        </section>
+        <div class="clear-fix"></div>
+            </div>
+         </div>
+        <!--------- End Features ---------->
+        <!--------- start About US ---------->
+        <!-- تم اضافة ديف خاصة ببلوك اباوت اس وحتى يتم اضافة خصائص لهذا
+             البلوك كامل اما الكونتينر نلاحظ تم اضافتها في كل البلوكات حتى
+              يكون الكونتينر او المحتوى للصفحه كلها ذو خصائص موحده
+               و هنا لايوجد لدينا تقسيمات لهذا البلوك بل لدينا فقط عنوان
+                وبرقراف لذلك معد بنقسم بالديفات
+         وهذا افضل sectionالخاصه بالبلوك الىdivيمكننا استبدال ال-->
+          <section class="about-us">
+            <div class="container">
+                <h2 class="text-center">About US</h2>
+                <p class="responsive-paragraph">This is fat feature This is fat feature This is fat feature This is fat feature
+                    This is fat feature This is fat feature This is fat feature This is fat feature
+                    This is fat feature This is fat feature This is fat feature This is fat feature
+                    This is fat feature This is fat feature This is fat feature This is fat feature
+                    This is fat feature This is fat feature This is fat feature This is fat feature
+                </p>
+                <div class="clear-fix"></div>
+            </div>
+        </section>
+        <!--------- End About US ---------->
+        <!--------- start Our Works ---------->
+        <section class="our-works">
+             <!--Full screanماحطيت كونتينر لانه بحط صور وابغاها تملأ الشاشة كامله-->
+             <div class="image float-left">
+                 <img class="resposive-img" src="images\3.png">
+             </div>
+             <div class="image float-left">
+                <img class="resposive-img" src="images\3.png">
+            </div>
+            <div class="image float-left">
+                <img class="resposive-img" src="images\3.png">
+            </div>
+            <div class="image float-left">
+                <img class="resposive-img" src="images\3.png">
+            </div>
+            <div class="image float-left">
+                <img class="resposive-img" src="images\3.png">
+            </div>
+            <div class="image float-left">
+                <img class="resposive-img" src="images\3.png">
+            </div>
+            <div class="image float-left">
+                <img  class="resposive-img" src="images\3.png">
+            </div>
+            <div class="image float-left">
+                <img class="resposive-img" src="images\3.png">
+            </div>
+            <div class="clear-fix"></div>
+        </section>
+        <!--------- End Our Works ---------->
+
+        <!--------- start Pricing Table ---------->
+        <section class="pricing-table text-center">
+            <div class="container">
+                <h2>Our Pricing Plans</h2>
+                <div class="pricing-plan float-left plus">
+                    <h3>Plus</h3>
+                     <!--لانه عندي شي بسيط بكتبه مهو برقراف span حطيت ال -->
+                    <span class="pricing">$10</span>
+                    <ul class="classic-list">
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                    </ul>
+                </div>
+                <div class="pricing-plan float-left Premium">
+                    <h3>Premium</h3>
+                     <!--لانه عندي شي بسيط بكتبه مهو برقراف span حطيت ال -->
+                    <span class="pricing">$20</span>
+                    <ul class="classic-list">
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                    </ul>
+                </div>
+                <div class="pricing-plan float-left ultimate">
+                    <h3>Ultimate</h3>
+                     <!--لانه عندي شي بسيط بكتبه مهو برقراف span حطيت ال -->
+                    <span class="pricing ">$30</span>
+                    <ul class="classic-list">
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                        <li>Test</li>
+                    </ul>
+                </div>
+                <div class="clear-fix"></div>
+            </div>
+        </section>
+        <!--------- End Pricing Table ---------->
+        <!--------- Start What They Say ---------->
+        <section class="they-say">
+            <div class="container">
+                <h2 class="text-center">What They Say About Us</h2>
+                <!--الديف الاولى فلوت ليفت بالتالي بتروح يسار بيجي 
+                الديف الثاني عطيناه فلوت ليفت بالتالي بيروح يسار
+                 بس بيحصل في عنصر قبله بالتالي مابيطلع فوقه بل 
+                 بيجلس جنبه وهكذا بالنسبه للعنصر الثالث الى ان ينتهي 
+                 العرض للديف البارينت الي تشملهم فبيخرج تحت وبيحط في اليسار
+                 وهو رايح لليمين الى ان ينتهي العرض بينزل تحت وهكذا الى ان تنتهي 
+                 عدد العناصر الي ضفناها
+                واذا مثلا عندنا العنصر الاول عرضه ميه بالميه بالتالي بيشل العرض كله 
+                فالعنصر الي بعده بينزل تحت لانه ماحصل عرض كافي فوق بالتالي الموضوع يعتمد على
+                عرض العناصر هذه ايضا 
+                -->
+                <div class="person-say float-left">
+                <div class="image float-left">
+                    <img class="resposive-img img-thumpnail img-circle" src="images/1.jpg" alt="" />
+                </div>
+                    <h3 >Ahmed</h3>
+                    <p >This is fat feature This is fat feature This is fat feature This is fat feature
+                        This is fat feature This is fat feature This is fat feature This is fat feature
+                        This is fat feature This is fat feature This is fat feature This is fat feature
+                  </p>
+                </div>
+                <!--<div class="clear-fix"></div>-->
+                <!--لو حطينا الكلير فيكس هنا بالتالي بيعمل كلير او مسح لاي فلوت 
+                بالتالي العنصر او الديف حق احمد السابقة ذي مافي  ولا عنصر بيجي بعدها-->
+                <div class="person-say float-left">
+                    <div class="image float-left">
+                        <img class="resposive-img" src="images/2.jpg" alt="" />
+                    </div>
+                    
+                    <h3>Ali</h3>
+                    <p>This is fat feature This is fat feature This is fat feature This is fat feature
+                        This is fat
+                     </p>
+                </div>
+                <div class="person-say float-left">
+                    <div class="image float-left">
+                        <img class="resposive-img" src="images/3.png" alt="" />
+                    </div>
+                  
+                    <h3>Mohammed</h3>
+                    <p>This is fat feature This is fat feature This is fat feature This is fat feature
+                        This is fat
+                   </p>
+                </div>
+                <div class="clear-fix"></div>
+            </div>
+        </section>
+        <!--------- End What They Say ---------->
+        <!--------- Start Information ---------->
+        <section class="information">
+            <div class="container">
+                <h2 class="text-center">Product Information</h2>
+                <ul class="classic-list info-list">
+                    <li data-class="about" class="selected">About</li>
+                    <li data-class="history">history</li>
+                    <li data-class="spec">spec</li>
+                    <li data-class="teach">teach</li>
+                    <li data-class="review">review</li>
+                </ul>
+                <div class="info-content">
+                    <div class="about">This1 is fat feature This is fat feature This is fat feature This is fat feature This is fat</div>
+                    <div class="history">This2 is fat feature This is fat feature This is fat feature This is fat feature This is fat</div>
+                    <div class="spec">This3 is fat feature This is fat feature This is fat feature This is fat feature This is fat</div>
+                    <div class="teach">This4 is fat feature This is fat feature This is fat feature This is fat feature This is fat</div>
+                    <div class="review">This5 is fat feature This is fat feature This is fat feature This is fat feature This is fat</div>
+
+                </div>
+            </div>
+        </section>
+        <!--------- End Information ---------->
+
+         <!--------- Start Footer ---------->
+         <footer>
+            <div class="container">
+                <div class="copyright float-left text-center">Copyright to Ashwag Programmer 2022</div>
+                <div class="design float-left text-center">Designed by Ashwag Mohsen</div>
+                <div class="clear-fix"></div>
+            </div>
+        </footer>
+        <!--------- End Footer ---------->
+        <script src="js/jquery-3.6.0.min.js" ></script>
+        <script src="js/jquery.nicescroll.min.js" ></script>
+        <script src="js/custome.js" ></script>
+    </body>
+  
+  
+</html>
+

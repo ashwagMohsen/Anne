@@ -1,0 +1,414 @@
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* End Global Rules */
+/* Start Heder */
+header{
+background: url('../images/3.png') no-repeat top center;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+min-height: 500px;
+position: relative;
+}
+header .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+}
+header .overlay h1{
+font-size: 60px;
+margin-top: 100px;
+}
+header .overlay .plan{
+    border: 2px solid #fff;
+    font-size: 24px;
+    width:50%;
+    /*here the float make them in the left every element inside the other in verticalافقي*/
+    float:left;
+    padding: 20px;
+}
+@media (max-width:767px){/*mobile & tablet rules*/
+    header .overlay .plan{
+         /*Here we make the float none so they will be in horizentalعمودي */
+        float: none;
+        /*top=0, left & right=auto for make them in the middle , bottom=20px*/
+        margin: 0 auto 15px;
+    }
+    header{
+        min-height: 550px;}
+}
+
+/* End Heder */
+
+/* Start Features */
+
+.features .feat{
+    
+    width:33.3333% ;
+}
+@media (min-width:768px){/*small screan rules*/
+    .features .feat:first-of-type{
+    
+        width:100% ;
+    }
+    .features .feat:not(first-of-type){
+    
+        width:100% ;
+    }
+    .features .feat:nth-of-type(even){
+    
+       background-color: #ddd ;
+    }
+}
+@media (min-width:992px){/*medium screan rules*/
+    .features .feat{
+    
+        width:33.3333% ;
+    }
+}
+/* End Features */
+
+/* start About US */
+.about-us{
+    background-color: #ececec;
+    padding: 30px 0;
+}
+.about-us .responsive-paragraph{
+    color: #848484;
+    font-size: 22px;
+}
+
+/* End About US */
+/* start Our Works */
+/* هنا عرض الديف اصغر من عرض الصورة بالتالي سيختفي جزء من الصورةوالحل هو جعل عرض الصورة 100 بالميه
+وبالتالي من ناحية الريسبونسيف و لاننا حطينا العرض بالميه كلما صغر الجهاز بيصغر الديف وبيعطل علينا الصورة 
+  بالتالي بسوي كلاس ريسبونسيف للصورة وبحطه في ماي فريم وورك وبعطيه عرض 100 بالميه و ليه مابخلي كل الصور ريسبونسيف وبعمل كلاس لانه قد تكون في صور
+   مابغيتها ريسبونسيف فبالتالي مااقدر اعمم التنسيق لكل الصور*/
+   
+   @media (min-width:768px){/*small screan rules*/
+    .our-works .image{ 
+        width:50%;
+        
+        }
+   }
+   
+   @media (min-width:992px){/*medium screan rules*/
+    .our-works .image{ 
+        width: 33.33333%;
+        
+        }
+   }
+   @media (min-width:1200px){/*large screan rules*/
+    .our-works .image{ 
+        width: 25%;
+        
+        }
+   }
+  
+
+/* End Our Works */
+/* Start Our Pricing Table */
+
+.pricing-table{
+    background-color: #444;
+    color: #fff;
+    padding: 50px 0;
+}
+.pricing-table h2{
+   margin:0 0 40px ;
+   font-size: 50px;
+}
+.pricing-table .pricing-plan{
+    /*because 100% \ 3 =33.33333% */
+    width: 33.33333%;
+    border: 3px solid #fff;
+    padding:20px 0 ;
+    position: relative;
+}
+.pricing-table .pricing-plan h3{
+    margin: 0 0 10px;
+    font-size: 26px;
+}
+.pricing-table .pricing-plan .pricing{
+    display: inline-block;
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #bfbfbf;
+}
+.pricing-table .pricing-plan ul{
+    line-height: 2;
+    font-size: 18px;
+}
+@media (max-width:767px){  /*mobile & tablet rules*/
+    .pricing-table .pricing-plan{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width:768px){/*small screan rules*/
+    .pricing-table .pricing-plan{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width:992px){/*medium screan rules*/
+    .pricing-table .pricing-plan:not(.ultimate){
+        margin-right: 1%;
+    }
+
+    .pricing-table .pricing-plan{
+        width: 32.66666%;
+    }
+    .pricing-table .pricing-plan.Premium{
+        right: 33.66666%;
+    }
+    .pricing-table .pricing-plan.plus{
+        left: 33.66666%;
+    }
+   
+}
+
+/* End Our Pricing Table */
+/*Start What They Say*/
+.they-say{
+padding: 50px 0;
+}
+.they-say h2{
+font-size: 50px;
+margin:0 0 30px;
+color:#555;
+}
+.they-say .person-say{
+background-color: #eee;
+padding: 5px ;
+margin:0 3px 20px;
+border: 1px solid #ddd;
+border-radius: 10px;
+}
+.they-say .person-say h3{
+    margin: 0 0 10px;
+}
+.they-say .person-say p{
+    margin: 0;
+    line-height: 1.7;
+    margin-left: 20px;
+    /*width: calc(100% - 120px);*/
+}
+.they-say .person-say .image{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+@media (min-width:768px){/*small screan rules*/
+    .they-say .person-say:first-of-type{
+     
+        width: 100%;
+    }
+    .they-say .person-say:not(:first-of-type){
+        width: 48%;
+    }
+    .they-say .person-say:last-of-type{
+     
+        margin-left: 2%;
+    }
+}
+@media (max-width:767px){  /*mobile & tablet rules*/
+    .they-say .person-say .image{
+        float: none;
+        margin: auto;
+     }
+     .they-say .person-say h3{
+        float: none;
+        text-align: center;
+     }
+     .they-say .person-say p{
+         float: none;
+     }
+}
+@media (min-width:768px) and (max-width:991px) {
+   
+    .they-say .person-say:not(:first-of-type) .image{
+       float: none;
+       margin: auto;
+    }
+    .they-say .person-say:not(:first-of-type) h3{
+       float: none;
+       text-align: center;
+    }
+    .they-say .person-say:not(:first-of-type) p{
+        float: none;
+    }
+   
+}
+@media (min-width:992px){/*medium screan rules*/
+    .they-say .person-say:first-of-type{
+        /*حطينا المارجين 25 بالميه عشان يحطه في النص*/
+       /* margin-left: 25%;*/
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+
+/*End What They Say*/
+/*Start Information*/
+.information{
+background-color: #ececec;
+padding: 30px 0;
+font-size:18px;
+}
+.information h3{
+    font-size: 50px;
+    color: #848484;
+}
+.information .info-list li{
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px;
+    padding: 15px;
+    font-size: 22px;
+    cursor:pointer;
+}
+.information .info-list li.selected{
+    color: #22a9bd;
+    background-color: #fff;
+    
+}
+.information .info-content{
+    margin-bottom: 30px;
+}
+.information .info-content > div{
+    padding: 20px;
+    background-color: #fff;
+    line-height: 2;
+}
+.information .info-content > div:not(:first-of-type){
+   display: none;
+}
+@media (max-width:767px){  /*mobile & tablet rules*/
+    .information .info-list li{
+        display: block;
+    }
+}
+
+/*End Informayion*/
+/*Start Footer*/
+footer{
+    background-color: #333;
+    color: #EEE;
+}
+footer .copyright,
+footer .design{
+    padding: 20px;
+}
+@media (max-width:767px){  /*mobile & tablet rules*/
+    footer .copyright,
+footer .design{
+    width: 100%;
+    
+}
+footer .design{ padding-top: 0px;}
+}
+@media (min-width:768px){/*small screan rules*/
+    footer .copyright,
+    footer .design{
+        width: 50%;
+    }
+}
+/*End Footer*/
+
+
+/*هنا الكويري نحط فيها الخواص العامه الي مهي مخصصه لبلوك معين*/
+@media (max-width:767px){  /*mobile & tablet rules*/
+    .responsive-paragraph{
+        text-align: center;
+        font-size: 18px !important;
+    }
+    .container{
+
+        margin: auto;
+        padding-left: 60px;
+        padding-right: 60px;
+     }
+}
+@media (min-width:768px){/*small screan rules*/
+   .container{
+       width: 750px;
+       margin: auto;
+       padding-left: 150px;
+       padding-right: 150px;
+   }
+}
+@media (min-width:992px){/*medium screan rules*/
+    .container{
+        width: 970px;
+        margin: auto;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+@media (min-width:1200px){/*large screan rules*/
+    .container{
+        width: 1170px;
+        margin: auto;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+
+
+
+
+/* Start My Framework */
+
+.text-center{
+    text-align: center;
+}
+.clear-fix{
+    clear: both;
+}
+/*if you convert this web page to arabic just 
+convert float here to right and let the name of proprty as it is*/
+.float-left{
+    float: left;
+}
+/*if you convert this web page to arabic just 
+convert float here to left and let the name of proprty as it is*/
+.float-right{
+    float: right;
+}
+/* لازم يكون له تنسيق ثابتاول شي*/
+.responsive-paragraph{
+line-height: 1.8;
+}
+.resposive-img{
+    width: 100%;
+    height: 100%;
+}
+
+.classic-list{/*هذا الكلاس يجعل العنصر لا بادينق و لا مارجين فيه */
+ padding: 0;
+ margin: 0;
+ list-style: none;
+}
+.img-circle{
+    border-radius: 50%;
+}
+.img-thumpnail{
+padding:3px ;
+background-color: #fff;
+border: 1 solid #ccc;
+}
+/*.container{
+    width:970px;
+}
+/* End My Framework */
